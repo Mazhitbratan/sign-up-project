@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif ;
+}
+body {
+	font-size: 16px;
+}
+section {
+	max-width: 100%;
+	width: 50%;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url('./images/bg-intro-desktop.png') no-repeat;
+	background-size: cover;
+	background-color: hsl(0, 100%, 74%);
+	padding: 0px 160px;
+}
+.learn {
+	color: #fff;
+	padding-right: 30px;
+}
+h1 {
+	font-size: 50px;
+	line-height: 56px;
+	margin-bottom: 35px;
+}
+.learn p{
+	line-height: 26px;
+	opacity: 0.9;
+}
+.head {
+	width: 90%;
+	background-color: hsl(248, 32%, 49%);
+	color: #efefef;
+	padding: 15px 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	padding-right: 30px;
+}
+.head span {
+	color: #fff;
+	font-weight: 600;
+}
+#form {
+	width: 90%;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 35px;
+	border-radius: 8px;
+}
+form div {
+	display: flex;
+	flex-direction: column;
+}
+input{
+	width: 100%;
+	padding: 17px 100px;
+	margin-bottom: 10px;
+	border: 2px solid #efefef;
+	border-radius: 8px;
+	font-weight: 700;
+}
+.error-icon {
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 97% 49%;
+  border: 2px solid hsl(0, 100%, 74%) !important;
+}
+input[type=submit] {
+	text-transform: uppercase;
+	color: #fff;
+	background-color: hsl(154, 59%, 51%);
+	font-size: 16px;
+}
+.terms-services {
+  font-size: 11px;
+  text-align: center;
+  padding: 12px 0 16px;
+  color: hsl(246, 25%, 77%);
+}
+form div span {
+	color: hsl(0, 100%, 74%);
+	font-weight: 700;
+}
+input::focus {
+	outline: none;
+}
+.error {
+  color: hsl(0, 100%, 74%);
+  margin-left: 5px;
+  float: right;
+  font-style: italic;
+  font-size: 12px;
+  margin: 7px 0 12px;
+}
+
+.error-icon {
+
+  background-image: url(../images/icon-error.svg) no-repeat;
+}
+
+@media (max-width:  768px) {
+	main {
+		padding: 40px 20px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: url('./images/bg-intro-desktop.png');		
+		background-color: hsl(0, 100%, 74%);
+	}
+	section{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.learn {
+		text-align: center;
+		padding: 40px 0px 60px;
+	}
+	form p{
+		text-align: center;
+	}
+	h1{
+		font-size: 38px;
+	}
+	.head{
+		padding: 15px 60px;
+	}
+}
